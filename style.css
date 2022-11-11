@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    height: 100vh;
+    background-color: #091921;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tab {
+    cursor: text;
+}
+
+.calculator {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.calc2 {
+    left: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s ease;
+}
+.calc1 {
+    transition: .5s ease;
+}
+
+.switch {
+    left: 50%;
+    opacity: 1;
+    pointer-events: all;
+}
+.remove {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.tab {
+    background-color: white;
+    padding-block: 40px;
+}
+
+.content {
+    cursor: pointer;
+}
+.content:active {
+    background-color: hsl(201, 55%, 20%);
+}
+
+.top {
+    grid-template-columns: 50% 25% 25%;
+}
+
+.grid {
+    display: grid;
+}
+
+.text-align {
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    padding-block: 30px;
+    background-color: #0f2734;
+    font-size: 20px;
+}
+
+.top > div {
+    text-align: center;
+    padding-block: 30px;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.top :is(.sub1){
+    background-color: #0f2734;
+}
+.top :is(.sub1:active){
+    background-color: hsl(201, 55%, 20%);
+}
+
+.cancel {
+    background-color: red;
+}
+.cancel:active {
+    background-color: hsl(0, 100%, 40%);
+}
+
+.mid1 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.slash {
+    border-right: 2px solid #0b202c;
+}
+.min {
+    border-right: 1px solid #0b202c;
+}
+.min1 {
+    border-bottom: 1px solid #0b202c;
+}
+.min2 {
+    border-bottom: 2px solid #0b202c;
+}
+
+.mid2 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.plus {
+    grid-row: span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.bottom {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.equal {
+    background-color: #efa41c;
+}
+.equal:active {
+    background-color: hsl(39, 87%, 35%);
+}
+
+.more {
+    background-color: teal;
+    font-size: 18px;
+}
+.more:active {
+    background-color: hsl(180, 100%, 15%);
+}
+
+.rad {
+    background-color: green;
+}
+.rad:active {
+    background-color: hsl(120, 100%, 36%);
+}
+
+.top1 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1050px){
+    .container {
+        width: 85%;
+    }
+}
