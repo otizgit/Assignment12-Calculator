@@ -22,12 +22,6 @@ contents.map((content) => {
           tab.classList.add("animate");
         }
         break;
-      case "Trig.":
-        tab.innerText = "";
-        break;
-      case "Back":
-        tab.innerText = "";
-        break;
       default:
         tab.innerText += e.target.innerText;
     }
