@@ -63,6 +63,9 @@ main {
 .content {
     cursor: pointer;
 }
+.content:hover {
+    background-color: hsl(201, 55%, 15%);
+}
 .content:active {
     background-color: hsl(201, 55%, 20%);
 }
@@ -95,11 +98,18 @@ main {
 .top :is(.sub1){
     background-color: #0f2734;
 }
+.top :is(.sub1:hover){
+    background-color: hsl(201, 55%, 15%);
+}
+
 .top :is(.sub1:active){
     background-color: hsl(201, 55%, 20%);
 }
 
 .cancel {
+    background-color: red;
+}
+.cancel:hover {
     background-color: red;
 }
 .cancel:active {
@@ -142,8 +152,11 @@ main {
 .equal {
     background-color: #efa41c;
 }
+.equal:hover {
+    background-color: hsl(39, 87%, 46%);
+}
 .equal:active {
-    background-color: hsl(39, 87%, 35%);
+    background-color: hsl(39, 87%, 40%);
 }
 
 .more {
