@@ -22,41 +22,42 @@ main {
     transform: translate(-50%, -50%);
 }
 
-.tab {
-    cursor: text;
-}
-
-.calculator {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.calc2 {
-    left: 100%;
-    opacity: 0;
-    pointer-events: none;
-    transition: .5s ease;
-}
-.calc1 {
-    transition: .5s ease;
-}
-
-.switch {
-    left: 50%;
-    opacity: 1;
-    pointer-events: all;
-}
-.remove {
-    opacity: 0;
-    pointer-events: none;
-}
-
-.tab {
+.tab-div {
     background-color: white;
-    padding-block: 40px;
+    cursor: text;
+    padding-left: 10px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.animate {
+    animation: slide .3s ease;
+    color: red;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    25% {
+        opacity: 1;
+        transform: translateX(20%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(-20%);
+    }
+    75% {
+        opacity: 1;
+        transform: translateX(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }
 
 .content {
@@ -162,6 +163,10 @@ main {
 
 .top1 {
     grid-template-columns: repeat(4, 1fr);
+}
+
+.arrow {
+    font-size: 22px;
 }
 
 @media (max-width: 1050px){
